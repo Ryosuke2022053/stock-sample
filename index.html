@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.2/Chart.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_inner">
+        <h1 class="header_siteTitle">
+          <a href="#" >
+            <img id='img-logo' src="./img/スクリーンショット 2021-12-19 15.56.28.png" alt="ダッシュボード">
+          </a>
+        </h1>
+        <nav class="header_nav">
+          <ul class="nav_menu">
+            <li class="nav_menu_item">
+              <a href="./csv1.html">有報データ</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="./csv2.html">ビニングデータ</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="./csv3.html">相関データ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <p id='list'></p>
+    <div class="split">
+      <div class="split-item split-left">
+          <div class="split-left__inner">
+            <div class="canvas-container">
+              <table class="graph">
+                <tr>
+                <td><canvas id="app"></canvas></td>
+                <td><canvas id="app_1"></canvas></td>
+                </tr>
+                <tr>
+                <td><canvas id="app_2"></canvas></td>
+                <td><canvas id="app_3"></canvas></td>
+                </tr>
+                <tr>
+                <td><canvas id="app_4"></canvas></td>
+                <td><canvas id="app_5"></canvas></td>
+                </tr>
+                <tr>
+                  <td><canvas id="app_6"></canvas></td>
+                  <td><canvas id="app_7"></canvas></td>
+                </tr>
+                <tr>
+                  <td><canvas id="app_8"></canvas></td>
+                  <td><canvas id="app_9"></canvas></td>
+                </tr>
+                <tr>
+                  <td><canvas id="app_10"></canvas></td>
+                  <td><canvas id="app_11"></canvas></td>
+                </tr>
+                <tr>
+                  <td><canvas id="app_12"></canvas></td>
+                  <td><canvas id="app_13"></canvas></td>
+                </tr>
+                </table>
+            </div>
+          </div>
+      </div>
+      <div class="split-item split-right">
+          <div class="split-right__inner">
+            <table id="ctable"></table>
+          </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
